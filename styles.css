@@ -64,9 +64,6 @@ a {
 	flex-direction: column;
 }
 
-.flex-right {
-	justify-content: right;
-}
 
 .flex-center {
 	justify-content: center;
@@ -74,6 +71,10 @@ a {
 
 .flex-align-center {
 	align-items: center;
+}
+
+.flex-align-bottom {
+	align-items: end;
 }
 
 
@@ -183,8 +184,12 @@ a {
 /*TEXT SIZE*/
 
 
-.text-s{
+.text-xs {
 	font-size: 0.75rem;
+}
+
+.text-s {
+	font-size: 0.85rem;
 }
 
 .text-l {
@@ -262,12 +267,11 @@ a {
 
 
 
-
-
-
-
-
-
+.sticky-nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
 
 
 
@@ -285,6 +289,9 @@ a {
 	background-color: var(--color-dark);
 }
 
+.bg-color-light {
+	background-color: var(--color-light);
+}
 
 .text-color-dark {
 	color: var(--color-dark);
@@ -293,8 +300,6 @@ a {
 .text-color-light {
 	color: var(--color-light);
 }
-
-
 
 
 
