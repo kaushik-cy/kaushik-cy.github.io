@@ -9,8 +9,6 @@
 :root {
 	--color-dark: #040404;
 	--color-light: #fefefe;
-	--color-brand-a: #fefe04;
-	--color-brand-b: #fe0404;
 	
 	--brand-font-m: "DM-Sans";
 }
@@ -28,11 +26,6 @@ ul {
 
 a {
 	text-decoration: none;
-}
-
-
-.color-white {
-	color: white;
 }
 
 
@@ -215,12 +208,22 @@ a {
 /*EFFECTS*/
 
 
-
 .foreground-effect {
 	transition: filter 0.5s;
 }
 .foreground-effect-parent:hover .foreground-effect:not(:hover) {
 	filter: blur(4px);
+}
+
+
+
+.nav-container {
+	border-radius: 9999px;
+	box-shadow: #00000020 0px 8px 24px;
+	transition: box-shadow 0.2s;
+}
+.nav-container:hover {
+	box-shadow: #00000020 0px 4px 12px;
 }
 
 
@@ -242,8 +245,7 @@ a {
 
 
 .text-focus-a {
-	transition: color 0.5s;
-	transition: background-color 0.5s;
+	transition: color 0.5s, background-color 0.5s;
 }
 .text-focus-a:hover {
 	color: var(--color-light);
@@ -252,8 +254,7 @@ a {
 
 
 .text-focus-b {
-	transition: color 0.5s;
-	transition: background-color 0.5s;
+	transition: color 0.5s,	background-color 0.5s;
 }
 .text-focus-b:hover {
 	color: var(--color-dark);
@@ -261,6 +262,40 @@ a {
 }
 
 
+.work {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: var(--color-dark);
+}
+
+
+.image-desc {
+	overflow: hidden;
+}
+
+
+.image-desc-image {
+	scale: 120%;
+	filter: invert(0);
+	transition: scale 0.4s, filter 0.4s;
+}
+.image-desc:hover .image-desc-image {
+	scale: 130%;
+	filter: invert(1);
+}
+
+.image-desc-desc {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.image-desc:hover .image-desc-desc {
+	opacity: 100%;
+}
 
 
 
@@ -281,7 +316,9 @@ a {
 	text-align: center;
 }
 
-
+.round {
+	border-radius: 9999px;
+}
 
 
 
@@ -293,6 +330,10 @@ a {
 	background-color: var(--color-light);
 }
 
+.bg-color-brand-a {
+	background-color: var(--color-brand-a);
+}
+
 .text-color-dark {
 	color: var(--color-dark);
 }
@@ -300,6 +341,7 @@ a {
 .text-color-light {
 	color: var(--color-light);
 }
+
 
 
 
@@ -317,3 +359,5 @@ a {
 .hide {
 	display: none;
 }
+
+
