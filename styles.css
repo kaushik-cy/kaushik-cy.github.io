@@ -223,7 +223,7 @@ a {
 	transition: box-shadow 0.2s;
 }
 .nav-container:hover {
-	box-shadow: #00000020 0px 4px 12px;
+	box-shadow: #00000030 0px 4px 12px;
 }
 
 
