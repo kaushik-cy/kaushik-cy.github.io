@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
-	<title>Kaushik C. | Portfolio</title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles-100.css" media="only screen and (max-width: 1199px)">
+		<link rel="stylesheet" href="styles-200.css" media="only screen and (min-width: 1200px)">
+		<title>Kaushik C. | Portfolio</title>
+	</head>
 	
-	<div style="position: relative;">
-
-		<div class="margin-y-s" style="position:fixed; left:50%; transform: translateX(-50%); z-index: 10;">
-			<div class="nav-container">
-				<a class="padding-x-xs padding-y-xxs text-color-dark nav-underline-parent text-m" href="#about">
-					<div class="nav-underline-container"></div>
-					About
-					<div class="nav-underline-container">
-						<div class="nav-underline-overlay"></div>
-					</div>
-				</a>
-				
-				<a class="padding-x-xs padding-y-xxs text-color-dark nav-underline-parent text-m" href="#work">
-					<div class="nav-underline-container"></div>
-					Work
-					<div class="nav-underline-container">
-						<div class="nav-underline-overlay"></div>
-					</div>
-				</a>
-
-			</div>
-		</div>
-
-		<div class="flex flex-column">
-			<div class="bg-color-dark margin-x-m margin-y-0" id="about">
-				<section class="padding-x-l padding-y-l" style="padding-bottom: 128px;">
-					<div class="flex margin-y-m">
-						<h2 class="text-color-light" style="padding-right: 16px">Kaushik C.</h2>
-						<div class="flex foreground-effect-parent">
-							<a class="contact-icon foreground-effect" href="mailto:kaushikc.j1@gmail.com">
-								<i class="bi bi-envelope"></i>
-							</a>
-							<a class="contact-icon foreground-effect" href="https://linkedin.com/in/kaushik-cy/" target="_blank">
-								<i class="bi bi-linkedin"></i>
-							</a>
-							<a class="contact-icon foreground-effect" href="https://github.com/kaushik-cy/" target="_blank">
-								<i class="bi bi-github"></i>
-							</a>
+	<body>
+		<div id="page">
+			<div id="nav">
+				<div class="nav-container">
+					<a class="nav-underline-parent" href="#about">
+						<div class="nav-underline-container"></div>
+						About
+						<div class="nav-underline-container">
+							<div class="nav-underline-overlay"></div>
 						</div>
-					</div>
-					<span class="text-xxl text-color-light">
-						Digital product manager with 3+ years of experience in product design and analytics
-					</span>					
-				</section>
-			</div>
-
-
-			<div class="margin-x-m" id="work">
-				<div class="" style="height: 40px; width: 100%;"></div>
-				<h2 class="text-color-dark text-xl" style="font-weight: normal;">Check out some of my work...</h2>
-				
-				<section class="work">
-					<div class="image-desc">	
-						<img class="image-desc-image" src="content/gspc-ichimoku.png" alt="ichimoku cloud">
-						<div class="image-desc-desc">
-							<span class="text-m text-color-dark bg-color-light">
-								In fall 2020, I wrote some python scripts to calculate and plot technical indicators for my post-graduation project. Eventually, I shifted my focus to other aspects of the project and the scripts went to the backburner. This <i>Streamlit</i> app is an attempt to give life to those old scripts again. Long live <i>yfinance</i> for providing free access to the ticker data.
-							</span>
+					</a>
+					
+					<a class="nav-underline-parent" href="#work">
+						<div class="nav-underline-container"></div>
+						Work
+						<div class="nav-underline-container">
+							<div class="nav-underline-overlay"></div>
 						</div>
-					</div>
-
-					<h3 class="work-title">stonks-lab</h3>
-					<a class="text-m text-color-dark text-focus-a" href="https://stonks-lab.streamlit.app/" target="_blank">
-						https://stonks-lab.streamlit.app/
 					</a>
-				</section>
-			</div>
-
-			<div class="align-bottom" id="footer">
-				<div class="" style="height: 100px; width: 100%;"></div>
-				<div class="margin-x-m">
-					<p class="text-l margin-y-s text-color-dark">Thank you.</p>
-					<a class="text-xl text-color-dark text-bold text-focus-a" href="mailto:kaushikc.j1@gmail.com">
-						kaushikc.j1@gmail.com
-					</a>
-					<p class="text-xs margin-y-m text-color-dark">Last updated: 2024/08/20 | Kaushik C.</p>
 				</div>
 			</div>
-		</div>
 
-	</div>
-</body>
+			<div id="about">
+				<div class="about-content">
+					<div class="about-name">
+						<h1>Kaushik C.</h1>
+					</div>
+					<div class="about-tagline">
+						<p>Transforming Digital Product Experience.</p>
+					</div>
+					<div class="about-contact">
+						<a class="about-icon" href="mailto:kaushikc.j1@gmail.com?subject=Saw Portfolio Website!">
+							<i class="bi bi-envelope"></i>
+						</a>
+						<a class="about-icon" href="https://linkedin.com/in/kaushik-cy/" target="_blank">
+							<i class="bi bi-linkedin"></i>
+						</a>
+						<a class="about-icon" href="https://github.com/kaushik-cy/" target="_blank">
+							<i class="bi bi-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="work">
+				<div class="card-box">
+					<a href="https://stonks-lab.streamlit.app" target="_blank">
+						<div class="card-content">
+							<div class="card-thumb">
+								<img class="card-thumb-img" src="content/gspc-ichimoku-360x360.png" alt="ichimoku cloud">
+								<div class="card-thumb-text">
+									<span class="card-thumb-text-span">
+										In fall 2020, I wrote some python scripts to calculate and plot technical indicators for my post-graduation project. Eventually, I shifted my focus to other aspects of the project and the scripts went to the backburner. This <i>Streamlit</i> app is an attempt to give life to those old scripts again. Long live <i>yfinance</i> for providing free access to the ticker data.
+									</span>
+								</div>
+							</div>
+							<div class="card-text">
+								<div class="card-name"> 
+									<h3>
+										stonks-lab
+									</h3>
+								</div>
+								<div class="card-desc">
+									<p>
+										https://stonks-lab.streamlit.app
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="card-box">
+					<a href="https://google.com" target="_blank">
+						<div class="card-content">
+							<div class="card-thumb">
+								<img class="card-thumb-img" src="content/controller.jpg" alt="pixabay-white-gaming-console-on-wooden-surface">
+								<div class="card-thumb-text">
+									<span class="card-thumb-text-span">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									</span>
+								</div>
+							</div>
+							<div class="card-text">
+								<div class="card-name"> 
+									<h3>
+										lorem ipsum
+									</h3>
+								</div>
+								<div class="card-desc">
+									<p>
+										https://google.com
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			
+			</div>
+		
+			<div id="footer">
+				<p>
+					Updated: 2025/02/09 | Kaushik C.
+				</p>
+			</div>
+
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
